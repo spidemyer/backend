@@ -7,12 +7,15 @@
 |RF02| Cadastro Autorizado | Validar o cadastro apenas para Nifs presentes no Bnaco de Dados |
 |RF03| CRUD de Materiais | Cadastrar, consultar, editar e excluir itens do estoque |
 |RF04| Movimentações | Registrar histórico de quem alterou o estoque com data/hora |
+|RF05| Adção de Material | Permitir que o usúario adcione materiais |
 
 ### 2. Requisitos Não Funcionais (RNF)
 * **RNF01 (Banco de Dados):** Persistência de dados utilizando PostgreSQL.
 * **RNF02 (Interface):** UI seguindo a identidade visual do SENAI.
 * **RNF03 (Tecnologias):** Back-end: Java 17+ / Spring Boot | Front-end: Thymeleaf / CSS3.
 * **RNF04 (Performance):** Consultas ao banco com tempo de resposta inferior a 2s.
+* **RNF05 (interface):** Listar todos os materiais.
+
 
 ## 2. Schema do Banco de Dados (ER)
 
