@@ -1,4 +1,4 @@
-## Requisitos do sistema
+## 1. Requisitos do sistema
 
 ### 1. Requisitos Funcionais (RF)
 | ID | Requisito  | Descrição  |
@@ -9,11 +9,12 @@
 |RF04| Movimentações | Registrar histórico de quem alterou o estoque com data/hora |
 
 ### 2. Requisitos Não Funcionais (RNF)
-|RNF01 | Banco de Dados | Persistência de dados usando o PostgreSQL |
-|RNF02 | Interface      | UI seguindo a identidade visual do SENAI  |
-|RNF03 | Performance    | Cunsultas ao banco com tempo de resposta inferior a 2s|
+* **RNF01 (Banco de Dados):** Persistência de dados utilizando PostgreSQL.
+* **RNF02 (Interface):** UI seguindo a identidade visual do SENAI.
+* **RNF03 (Tecnologias):** Back-end: Java 17+ / Spring Boot | Front-end: Thymeleaf / CSS3.
+* **RNF04 (Performance):** Consultas ao banco com tempo de resposta inferior a 2s.
 
-## 🗄️ Schema do Banco de Dados (ER)
+## 2. Schema do Banco de Dados (ER)
 
 O sistema utiliza o banco de dados PostgreSQL. Abaixo está a representação das tabelas e seus relacionamentos:
 
