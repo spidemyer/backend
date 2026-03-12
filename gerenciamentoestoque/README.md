@@ -12,3 +12,26 @@
 |RNF01 | Banco de Dados | Persistência de dados usando o PostgreSQL |
 |RNF02 | Interface      | UI seguindo a identidade visual do SENAI  |
 |RNF03 | Performance    | Cunsultas ao banco com tempo de resposta inferior a 2s|
+
+## 🗄️ Schema do Banco de Dados (ER)
+
+O sistema utiliza o banco de dados PostgreSQL. Abaixo está a representação das tabelas e seus relacionamentos:
+
+### 1. Tabela `funcionarios_autenticados`
+*Lista de controle (White List) que define quem tem permissão para criar uma conta.*
+| Campo | Tipo | Descrição |
+| :--- | :--- | :--- |
+| **id** (PK) | BIGINT | Identificador único (Auto-incremento). |
+| **nome** | VARCHAR(120) | Nome completo do colaborador autorizado. |
+| **nif** | VARCHAR(20) | Número de Identificação Fiscal (Único). |
+| **ativo** | BOOLEAN | Define se o acesso ainda é válido. |
+
+### 2. Tabela `funcionarios`
+*Dados dos usuários que já realizaram o cadastro no sistema.*
+| Campo | Tipo | Descrição |
+| :--- | :--- | :--- |
+| **id** (PK) | BIGINT | Identificador único (Auto-incremento). |
+| **nome** | VARCHAR(255) | Nome vindo do cadastro. |
+| **nif** | VARCHAR(20) | NIF (FK lógica para autenticados). |
+| **senha** | VARCHAR(255) | Senha de acesso. |
+| **ativo** | BOOLEAN | Status da conta do usuário. |
