@@ -164,3 +164,29 @@ background: var(--senai-gray-50);
 }
 
 .senai-alert p { margin: 0; }
+
+.senai-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.senai-table th {
+    background-color: var(--senai-gray-200);
+    text-align: left;
+    padding: 12px;
+    border-bottom: 2px solid var(--senai-red);
+}
+
+.senai-table td {
+    padding: 12px;
+    border-bottom: 1px solid var(--senai-gray-200);
+}
+
+.link-danger {
+    color: var(--senai-red);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
